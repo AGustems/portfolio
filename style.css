@@ -198,6 +198,9 @@
 
 /* Projects */
 #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 80px 0 20px;
     background-color: var(--light-blue);
 }
@@ -302,6 +305,9 @@
 
 /* About */
 #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 80px 0 20px;
     background-color: var(--mid-blue);
 }
@@ -360,8 +366,10 @@
 
 /* Contact */
 #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    padding: 80px 0 20px;
     background-color: var(--hash-blue);
 }
 
@@ -375,10 +383,6 @@
 #contact > hr {
     margin: 10px 48%;
     border: 2px solid var(--dark-blue);
-}
-
-.contact__form {
-    margin-top: 5%;
 }
 
 .contact__form > h3 {
