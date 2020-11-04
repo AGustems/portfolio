@@ -421,7 +421,6 @@
     outline: none;
     transition: 1s ease-in-out;
 }
-
 .contact__formBtn:hover {
     transition: 1s ease-in-out;
     background: var(--light-blue);
@@ -433,7 +432,6 @@
     font-size: 1.1rem;
     font-weight: 100;
 }
-
 .contact__formBtn:hover span {
     color: var(--dark-blue);
     transition: 1s ease-in-out;
@@ -522,4 +520,75 @@
     60% {
         transform: translateY(-15px);
     }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .intro__presentation>h2 {
+        font-size: 3rem;
+    }
+    .intro__presentation>h3 {
+        font-size: 1.3rem;
+    }
+
+    .call__content{
+        width: 60%;
+    }
+
+    .about__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+    }
+    .about__image,
+    .about__info {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact__form > form > input,
+    .contact__form > form > textarea {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .navbar {
+        width: 100vw;
+        height: 40px;
+    }
+    
+    .navbar > ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .navbar > ul > li {
+        margin: 0 0.2rem;
+        padding: 0.5rem;
+    }
+        
+    .intro {
+        height: 35vh;
+    }
+    .intro__presentation>h2 {
+        font-size: 2rem;
+    }
+    .intro__presentation>h3 {
+        font-size: 1rem;
+    }
+
+    .call__content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 448px){
+
 }
