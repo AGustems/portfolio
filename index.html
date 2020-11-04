@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Alba Gustems Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <video autoplay muted loop id="bgvideo">
+                <source src="bg.mp4" type="video/mp4" alt="background video">
+            </video>
+            <div class="intro">
+                <div class="intro__presentation">
+                    <h2>Hi, I'm
+                        <span>Alba Gustems</span>.</h2>
+                    <h3>I'm a full-stack web developer</h3>
+                </div>
+            </div>
+            <div class="call">
+                <div class="call__image">
+                    <img src="AlbaGustems.jpg" alt="Alba Gustems"/>
+                </div>
+                <div class="call__content">
+                    <p>Welcome to my portfolio.</p>
+                    <p>I'm a web developer with a comunication background</p>
+                    <p>While coursing my Media Studies degree I felt in love with coding, and now
+                        here we are :)</p>
+                </div>
+            </div>
+            <div class="arrowbox" href="#projects">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>~ Projects ~</h1>
+            <hr/>
+            <div class="projects__container">
+                <div class="projects__card">
+                    <img src="roomer.png" alt="Roomer Project">
+                    <div class="projects__cardInfo">
+                        <h3>Roomer</h3>
+                        <p>Roomer is an app that helps you find your perfect roommate. You can easily
+                            browse among all the room adverts and mark your favourites, and when you find
+                            that perfect room you can contact the user who posted the advert immediately.</p>
+                        <a
+                            href="https://github.com/AGustems/roomer-frontend"
+                            target="_blank"
+                            class="btn-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://roomer-app.herokuapp.com/" target="_blank" class="btn-live">
+                            <i class="fas fa-desktop"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <img src="rehomeme.jpg" alt="Rehome Me Project">
+                    <div class="projects__cardInfo">
+                        <h3>Rehome Me</h3>
+                        <p>An app where users can rehome or adopt pets permanently or temporarily.
+                            Because rehoming a pet should be easy and stress free. Start using Rehome me!</p>
+                        <a
+                            href="https://github.com/AGustems/rehome-me"
+                            target="_blank"
+                            class="btn-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://rehome-me.herokuapp.com/" target="_blank" class="btn-live">
+                            <i class="fas fa-desktop"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <img src="rpsls.jpg" alt="Rock, Paper, Scissors Project">
+                    <div class="projects__cardInfo">
+                        <h3>Rock, Paper, Scissors...</h3>
+                        <p>Simulator of the children's game of decision making of rock, paper, scissors
+                            in its extended version created by Sam Kass (paying homage to Star Trek) and
+                            popularized by the series "The Big Bang Theory".</p>
+                        <a
+                            href="https://github.com/AGustems/finalproject-mo1-ironhack"
+                            target="_blank"
+                            class="btn-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                            href="https://agustems.github.io/finalproject-mo1-ironhack/"
+                            target="_blank"
+                            class="btn-live">
+                            <i class="fas fa-desktop"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow bounce">
+                <a id="arrow-projects" class="fa fa-arrow-down fa-2x" href="#about"></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>~ About Me ~</h1>
+            <hr/>
+            <div class="about__container">
+                <div class="about__image">
+                    <img src="me.jpg" alt="Alba Gustems"/>
+                </div>
+                <div class="about__info">
+                    <p>
+                        I've always been that kind of person who has always wanted to do their best at
+                        everything that they do, eager to learn and to develop personally. That was why
+                        at school they urged me to persue a degree in Laws. Although I passed all my
+                        tests, I was no attracted to the degree, laws are static and there is
+                        practically no room for creativity.
+                    </p>
+                    <p>
+                        That's why I decided to change my path and study a degree in Media Studies,
+                        which I liked a lot. During the last year, we had an introductory subject to web
+                        programming, and that's when I fell in love wih it.
+                    </p>
+                    <p>
+                        After graduating, I decided to enroll to IronHack, since programming allowed me
+                        to develop my creativity and also have an impact in the digital world, helping
+                        companies and individuals, to have a place in which they can express themselves
+                        and contact their clients using a media in continuous development.
+                    </p>
+                </div>
+            </div>
+            <div class="arrow bounce">
+                <a id="arrow-about" class="fa fa-arrow-down fa-2x" href="#contact"></a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>~ Contact Me ~</h1>
+            <div class="contact__form">
+                <h3>Do you have a question or want to work together?</h3>
+                <form id="contact-form" action="https://formspree.io/f/mgepyrwz" method="POST">
+                    <input id="subject" type="text" placeholder="Subject" name="subject" required/>
+                    <input id="email" type="email" placeholder="Email" name="_replyto" required/>
+                    <textarea
+                        id="message"
+                        name="message"
+                        classrows="6"
+                        cols="50"
+                        placeholder="Your message"
+                        required></textarea>
+                    <button class="contact__formBtn" type="submit"><span>Send</span></button>
+                </form>
+                <div id="error"></div>
+            </div>
+            <div class="arrow bounce">
+                <a id="arrow-contact" class="fa fa-arrow-down fa-2x" href="#home"></a>
+            </div>
+            <div class="footer">
+                <div class="footer__links">
+                    <div class="footer__linksMail">
+                        <a href="mailto:albagustems@gmail.com">albagustems@gmail.com</a>
+                    </div>
+                    <div class="footer__linksSocial">
+                        <a href="https://github.com/AGustems" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/albagustemsolle/"
+                            target="_blank"
+                            class="btn-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <p>© 2020 Alba Gustems</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
